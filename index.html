@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FreeCell</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <main class="content">
+      <header>
+        <h3>FREECELL</h3>
+        <div class="mark">
+          <img src="img/king_happy.png" alt=""> 
+        </div>       
+        <div>
+          <div class="temporary card"></div>
+          <div class="temporary card"></div>
+          <div class="temporary card"></div>
+          <div class="temporary card"></div>
+        </div>        
+        <div>
+          <div class="permanent card">
+            <img src="img/S.png" alt="">
+          </div>
+          <div class="permanent card">
+            <img src="img/H.png" alt="">
+          </div>
+          <div class="permanent card">
+            <img src="img/D.png" alt="">
+          </div>
+          <div class="permanent card">
+            <img src="img/C.png" alt="">
+          </div>
+        </div>
+        
+      </header>
+      <div id="random-cards">
+        <div class="col">
+          <div class="card" draggable="true">
+            <img src="img/cards_background/S13.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/H10.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/S10.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/H9.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/S7.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/S11.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/S1.png" alt="">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" draggable="true">
+            <img src="img/cards_background/S5.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/S12.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/S6.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/H3.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/C11.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/D7.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/C2.png" alt="">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" draggable="true">
+            <img src="img/cards_background/H12.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/H2.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/C8.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/S3.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/D4.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/D3.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/D11.png" alt="">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" draggable="true">
+            <img src="img/cards_background/C13.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/S2.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/D13.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/S8.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/D12.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/D6.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/H8.png" alt="">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" draggable="true">
+            <img src="img/cards_background/D2.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/S7.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/H7.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/H11.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/H13.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/C5.png" alt="">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" draggable="true">
+            <img src="img/cards_background/D8.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/C3.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/D5.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/H6.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/H1.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/H4.png" alt="">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" draggable="true">
+            <img src="img/cards_background/C9.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/H5.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/D9.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/D1.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/C4.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/C12.png" alt="">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" draggable="true">
+            <img src="img/cards_background/C10.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/D10.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/S6.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/C4.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/S9.png" alt="">
+          </div>
+          <div class="card" draggable="true">
+            <img src="img/cards_background/C1.png" alt="">
+          </div>
+        </div>
+      </div>
+      <footer> 
+        <div class="info">
+          <div class="info-mark">
+            <img src="img/info.svg" alt="">
+          </div> 
+          <span id="time">TIME: 00:00</span>
+          <span id="score">SCORE: 0</span>
+        </div> 
+        <nav>
+          <button id="newGame" class="btn">NEW GAME</button>
+          <button id="restart" class="btn">RESTART</button>
+          <button id="hint" class="btn">HINT</button>
+          <button id="undo" class="btn">UNDO</button>
+        </nav>
+      </footer>      
+    </main>
+  </div>
+</body>
+</html>

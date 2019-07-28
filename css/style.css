@@ -1,0 +1,210 @@
+* {
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+  /* border: 1px solid #000; */
+}
+
+html,body {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #fc7e7e;
+}
+
+.wrap {
+  position: relative; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  height: 800px;
+  background-color: #E2E2E2;
+}
+
+.content {
+  width: 1000px;
+  height: 800px;
+  margin: 0 auto;       /* 注意*/
+  padding-top: 50px;
+}
+
+
+/* 通用 */
+.card {
+  width: 95px;
+  height: 145px;
+  border: 2px solid #FCFCFC;
+  border-radius: 5px; 
+}
+
+.col {
+  position: relative;
+}
+.col div:nth-child(n+2) {
+  position: absolute;
+}
+.col div:nth-child(2){
+  top: 25px;
+}
+.col div:nth-child(3){
+  top: 50px;
+}
+.col div:nth-child(4){
+  top: 75px;
+}
+.col div:nth-child(5){
+  top: 100px;
+}
+.col div:nth-child(6){
+  top: 125px;
+}
+.col div:nth-child(7){
+  top: 150px;
+}
+
+.btn {
+  width: 120px;
+  height: 40px;
+  background-color: #222222 ;
+  color: #FFFFFF;
+  border: 1px solid;
+  border-radius: 50px;
+  outline: none;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;    
+  text-align: center;
+  /* vertical-align: middle; */
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #FFB53E;
+  border: 1px solid #FFB53E;
+}
+
+img {
+  width: 100%;
+}
+
+
+/* 上方: 左、右 */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header>div {
+  display: flex;
+}
+
+header .card {
+  margin-right: 15px;
+}
+
+header .card:nth-child(4) {
+  margin-right: 0;
+}
+
+.permanent { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FCFCFC;
+}
+
+.permanent>img {
+  width: 35px;
+  height: 35px;
+}
+
+
+/* 上方: 中間標示 */
+.mark {
+  position: absolute;
+  top: 83px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mark>img {
+  width: 60px;
+  height: 60px;
+}
+
+h3 {
+  position: absolute;
+  top: 146px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #222222;
+  line-height: 17px;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0;
+  letter-spacing: 1.3px;
+}
+
+
+/* 隨機卡牌區 */
+#random-cards {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  min-height: 495px;
+}
+
+#random-cards .card {
+  border: 0.5px solid #BABABA;
+}
+
+
+/* footer */
+footer {  
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  border-top: 1px solid #CCCCCC;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+
+.info .info-mark {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border: 2px solid #222222;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.info .info-mark:hover {
+  opacity: 0.6;           /* 增加 */
+}
+
+.info img {
+  width: 20px;
+  height: 20px;  
+}
+
+#time {
+  margin-right: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav>.btn {
+  margin-left: 15px;
+}
